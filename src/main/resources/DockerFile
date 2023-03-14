@@ -1,0 +1,10 @@
+FROM openjdk:17
+
+WORKDIR /C:/Users/user/ijedibia-daniel
+
+COPY . /C:/Users/user/Documents/java/my git/The_DroneApp/The_Drone/
+
+RUN javac TheDroneApplication.java
+
+ENTRYPOINT ["java", "Main"]
+
